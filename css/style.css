@@ -1,0 +1,106 @@
+** Colores
+#F15412 Rojo
+#000000 Negro
+#34B3F1 Celeste
+#EEEEEE Gris
+#D91122 Bordo
+#3084F2 Celeste
+#2B88D9 Azul Francia
+#F20F0F Rojo
+#F2F2F2 Blanco Mate
+/**
+Mis Fuentes:
+font-family: 'Karma', serif;
+font-family: 'Mulish', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    
+  header {
+    display: grid;
+    grid-column: 2;
+    grid-template-rows:auto;
+    grid-area: header;
+    background: color #f2f2f2;;
+    width: 100%;
+   display: flex;
+    flex-direction: row;
+    border: #D91122;
+    border-style: solid;
+}
+
+/*logo inicio de página*/
+.logoNav{
+    align-items: center;
+    position: relative;
+    background-color: #F2f2f2;
+    
+    }
+
+.nav-item{ 
+    font-weight: bold;
+    color: #000000;
+    font-family:'Karma', serif; 
+    text-decoration: none;
+    list-style: none;
+    
+        
+}
+
+body{
+    background-color:#34b3f1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;        
+}
+
+.cursosCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+   justify-content: center;
+    align-content: center;
+    }
+
+    .card{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    footer{
+        background-color:#D91122 ;
+    }
+
+    .navbar{
+        background-color:#F2f2f2;
+    }
+    /* FOOTER*/
+
+    footer{
+    
+        list-style: none;
+        text-decoration: none;
+        background-color:#D91122;
+        border-color: #2F9ec1;
+        border-width: 2px;
+        border-style: groove;
+        margin-bottom: 0px;
+        
+    }
+    
+
+    footer ul li a{    
+        text-decoration: none;
+        font-family:'Karma', serif ;
+        color: #000;
+        font-size: 25px;
+        font-weight: 200;
+        font-style:normal;  
+        }

@@ -53,12 +53,55 @@ font-family: 'Mulish', sans-serif;
         
 }
 
-body{
+.body{
     background-color:#34b3f1;
     align-items: center;
     justify-content: center;
     width: 100%;        
 }
+
+
+
+  
+
+    .navbar{
+        background-color:#F2f2f2;
+    }
+
+    
+    /* FOOTER*/
+
+    .footer{
+    
+        list-style: none;
+        text-decoration: none;
+        color: #000;
+        background-color:#D91122;
+        font-family: 'Mulish', sans-serif ;
+        /**border-color: #2F9ec1;
+        border-width: 2px;
+        border-style: groove;**/
+        margin-bottom: 0px;
+        height: 100%;
+        
+    }
+    
+
+    footer ul li a{    
+        text-decoration: none;
+        list-style: none;
+        text-decoration: none;
+        font-family:'Karma', serif ;
+        color: #000;
+        font-size: 25px;
+        font-weight: 200;
+        font-style:normal;  
+        }
+
+
+
+/*CURSOS**/
+
 
 .cursosCards {
     display: flex;
@@ -72,35 +115,91 @@ body{
     .card{
         margin: 20px;
         padding: 10px;
-    }
-
-    footer{
-        background-color:#D91122 ;
-    }
-
-    .navbar{
-        background-color:#F2f2f2;
-    }
-    /* FOOTER*/
-
-    footer{
-    
-        list-style: none;
-        text-decoration: none;
-        background-color:#D91122;
-        border-color: #2F9ec1;
-        border-width: 2px;
-        border-style: groove;
-        margin-bottom: 0px;
         
     }
-    
 
-    footer ul li a{    
-        text-decoration: none;
-        font-family:'Karma', serif ;
-        color: #000;
-        font-size: 25px;
-        font-weight: 200;
-        font-style:normal;  
-        }
+   /** .card:hover{
+        transform:scale(1.6);
+        transition: 3s;
+    
+    }**/
+
+    .card-body {
+        background-color: #D91122;
+    }
+
+
+/*CONTACTO**/
+
+.formularioContacto {
+    font-family:'Mulish', sans-serif;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-style: double;
+    border-color: #F2F2F2;
+    border-width: 8px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:#F20F0F;
+    padding: 10px;
+    inline-size: auto;
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.formularioContacto input{
+    background-color: #34b3f1;
+    color: #000;
+    border-color: #EEEEEE;
+    font-family: 'Mulish', sans-serif;
+    
+}
+.formularioContacto select{
+    background-color: #34b3f1;
+    color: #000;
+    border-color: #EEEEEE;
+    font-family: 'Mulish', sans-serif;
+}
+
+/**EMPRESAS**/
+
+.card-bodyEmpresas{
+    background-color:#efb810 ;
+    
+} 
+
+.empresasCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+   justify-content: center;
+    align-content: center;
+    background-color: #34b3f1;
+   
+}
+
+/**.cardempresas:hover{
+    transform:scale(1.6);
+    transition: 3s;
+} **/
+
+.cardempresas {
+    margin: 0px;
+    padding: 0px;
+}
+
+/** CALENDARIO**/
+
+.calendarioCursos {
+    margin-left: 400px;
+    margin-right: 430px;
+    margin-top: 0px;
+    border-color: #D91122;
+    border-width: 15px;
+    border-style: groove;   
+    justify-content: center;
+    
+}

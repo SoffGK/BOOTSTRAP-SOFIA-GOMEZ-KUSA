@@ -1,0 +1,29 @@
+
+.tituloEmpresas{
+    font-family:'Karma', sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+    color: #000;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display:block;
+}
+.tituloEmpresas:hover{
+    color: #efb810;
+    transition: 1.5s;
+}
+.empresascards{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    div{
+    .card-bodyEmpresas{
+        background-color:#efb810;
+        .card-text{
+            font-family:'Karma', serif;
+            font-style: bold;
+
+        }
+    }
+}
+}

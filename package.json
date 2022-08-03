@@ -1,0 +1,19 @@
+{
+  "name": "proyectosofiagomezkusabootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoffGK/BOOTSTRAP-SOFIA-GOMEZ-KUSA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoffGK/BOOTSTRAP-SOFIA-GOMEZ-KUSA/issues"
+  },
+  "homepage": "https://github.com/SoffGK/BOOTSTRAP-SOFIA-GOMEZ-KUSA#readme",
+  "description": ""
+}

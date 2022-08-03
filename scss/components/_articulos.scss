@@ -1,0 +1,14 @@
+.articulos{
+    display: flex;
+    flex-direction: row;
+    flex-grow: initial;
+    justify-content: space-around;
+    
+    align-content: space-between;
+    align-items:center;
+      section {
+        height: 40%;
+    width: 40%;
+    margin: 10px;
+      }   
+}

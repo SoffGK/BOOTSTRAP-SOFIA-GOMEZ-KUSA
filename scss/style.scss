@@ -1,0 +1,44 @@
+/* Colores
+#F15412 Rojo
+#000000 Negro
+#34B3F1 Celeste
+#EEEEEE Gris
+#D91122 Bordo
+#3084F2 Celeste
+#2B88D9 Azul Francia
+#F20F0F Rojo
+#F2F2F2 Blanco Mate
+/**
+Mis Fuentes:
+font-family: 'Karma', serif;
+font-family: 'Mulish', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+@import"./layout/header";
+
+@import"./layout/body";
+
+@import"./components/articulos";
+
+@import"./components/contacto";
+
+@import"./components/cursos";
+
+@import"./components/cursos__empresas";
+
+@import"./components/calendario";
+
+@import"./layout/footer";
+
+
+
+

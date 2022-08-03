@@ -1,0 +1,24 @@
+.cursosCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+   justify-content: center;
+    align-content: center;
+    .card:hover{
+        transform:scale(1.6);
+        transition: 3s;
+    }
+    .card{
+        margin: 20px;
+        padding: 10px;
+        .card-body{
+            background-color: #D91122;
+            p{
+                font-family:'Karma', serif;
+                font-style: bold;
+            }
+        }
+    }
+}
+

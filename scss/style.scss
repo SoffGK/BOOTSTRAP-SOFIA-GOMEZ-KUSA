@@ -21,7 +21,11 @@ font-family: 'Mulish', sans-serif;
 }
 
 
-
+.home_R{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
 @import"./layout/header";
 

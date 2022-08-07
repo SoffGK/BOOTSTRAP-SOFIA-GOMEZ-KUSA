@@ -1,26 +1,26 @@
 
 .tituloEmpresas{
-    font-family:'Karma', sans-serif;
-    font-size: xx-large;
+    font-family:$fuente-gral;
+    font-size:50px;
     font-style: italic;
-    color: #000;
+    color:$color-letras;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     display:block;
 }
 .tituloEmpresas:hover{
-    color: #efb810;
+    color: $color-empresas;
     transition: 1.5s;
 }
 .empresascards{
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 110px;
+    margin-top: 80px;
     div{
     .card-bodyEmpresas{
-        background-color:#efb810;
+        background-color:$color-empresas;
         .card-text{
-            font-family:'Karma', serif;
+            font-family:$fuente-gral;
             font-style: bold;
 
         }

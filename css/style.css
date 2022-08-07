@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home_R {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Colores
 #F15412 Rojo
 #000000 Negro
@@ -13,38 +24,43 @@ Mis Fuentes:
 font-family: 'Karma', serif;
 font-family: 'Mulish', sans-serif;
 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
-  display: grid;
-  grid-column: 2;
-  grid-template-rows: auto;
-  grid-area: header;
   background: color #f2f2f2;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
   border: #D91122;
   border-style: solid;
+  min-width: 250px;
 }
 header nav {
+  display: grid;
+  grid-template-columns: 30% 70%;
   background-color: #F2f2f2;
+  width: 100%;
 }
-header nav div a {
-  align-items: center;
+header nav div .navLogo {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  background-color: #F2f2f2;
+  background-color: #f2f2f2;
+  width: 30%;
+  min-width: 250px;
+}
+header nav .navbar-toggler {
+  font-family: "Karma", serif;
+  font-size: 50px;
+  font-style: bold;
+  text-decoration: none;
 }
 header nav ul {
+  display: grid;
+  grid-template-columns: auto;
   list-style: none;
-  background-color: #F2f2f2;
+  background-color: #f2f2f2;
+  width: fit-content;
 }
 header nav ul li {
-  background-color: #F2f2f2;
+  background-color: #f2f2f2;
   list-style: none;
 }
 header nav ul li a:hover {
@@ -54,11 +70,11 @@ header nav ul li a:hover {
 header nav ul li a {
   align-items: center;
   position: relative;
-  background-color: #F2f2f2;
+  background-color: #f2f2f2;
   text-decoration: none;
   font-family: "Karma", serif;
-  color: #000;
-  font-size: 25px;
+  color: #000000;
+  font-size: 15px;
   font-weight: 200;
   font-style: normal;
 }
@@ -75,42 +91,47 @@ body {
   flex-direction: row;
   flex-grow: initial;
   justify-content: space-around;
+  width: fit-content;
   align-content: space-between;
   align-items: center;
 }
 .articulos section {
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   margin: 10px;
+  margin-top: 3%;
+  margin-bottom: 6%;
 }
 
 .formularioContacto {
   font-family: "Mulish", sans-serif;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   border-style: double;
-  border-color: #f20f0f;
+  border-color: #D91122;
   border-width: 8px;
   padding: 20px;
   border-radius: 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 10px;
   inline-size: auto;
   text-align: left;
   color: #000000;
+  justify-content: center;
+  width: 50%;
 }
 .formularioContacto input {
-  background-color: #f20f0f;
-  color: #000;
+  background-color: #D91122;
+  color: #000000;
   border-color: #EEEEEE;
   font-family: "Mulish", sans-serif;
   font-style: bold;
 }
 .formularioContacto select {
-  background-color: #f20f0f;
-  color: #000;
+  background-color: #D91122;
+  color: #000000;
   border-color: #EEEEEE;
   font-family: "Mulish", sans-serif;
   font-style: bold;
@@ -141,13 +162,13 @@ body {
 }
 
 .tituloEmpresas {
-  font-family: "Karma", sans-serif;
-  font-size: xx-large;
+  font-family: "Karma", serif;
+  font-size: 50px;
   font-style: italic;
-  color: #000;
+  color: #000000;
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   display: block;
 }
 
@@ -157,8 +178,8 @@ body {
 }
 
 .empresascards {
-  margin-bottom: 100px;
-  margin-top: 50px;
+  margin-bottom: 110px;
+  margin-top: 80px;
 }
 .empresascards div .card-bodyEmpresas {
   background-color: #efb810;
@@ -168,47 +189,83 @@ body {
   font-style: bold;
 }
 
-.calendarioCursos {
-  margin-left: 400px;
-  margin-right: 430px;
-  margin-top: 0px;
-  border-color: #D91122;
-  border-width: 15px;
-  border-style: groove;
-  justify-content: center;
+.calendarioMain {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-row: 2fr;
+  width: fit-content;
+}
+.calendarioMain .calendarioTexto {
+  margin-top: 35%;
+  margin-right: 15%;
+  margin-left: 15%;
+  font-family: "Karma", serif;
+  font-size: 40%;
+  color: #000000;
+  font-style: bold;
+  text-align: justify;
+}
+.calendarioMain .calendarioCursos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: auto;
+  height: auto;
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 45% 40%;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
   list-style: none;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   background-color: #D91122;
   font-family: "Mulish", sans-serif;
+  margin-top: 10%;
   margin-bottom: 0px;
+  width: 100%;
   height: 100%;
   justify-content: space-between;
 }
-footer nav {
-  display: flex;
-  flex-flow: nowrap;
-  justify-content: space-between;
-  justify-items: center;
+footer nav .footerlist {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 98%;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
-footer nav ul li a {
-  list-style: none;
-  text-decoration: none;
+footer nav .footerlist li {
+  width: 15%;
+}
+footer nav .footerlist li a {
+  padding: 0%;
+}
+footer nav .footerForm {
+  width: fit-content;
+  height: 5%;
   font-family: "Karma", serif;
-  color: #000;
-  font-size: 25px;
-  font-weight: 200;
-  font-style: normal;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
 }
 
 .nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style: none;
   text-decoration: none;
   font-family: "Karma", serif;
-  color: #000;
+  color: #000000;
   font-size: 25px;
   font-weight: 200;
   font-style: normal;

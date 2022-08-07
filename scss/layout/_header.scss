@@ -2,14 +2,13 @@ header {
    
     background: color #f2f2f2;;
     width: 100%;
-   display: flex;
-    flex-direction: row;
+   display: grid;
     border: #D91122;
     border-style: solid;
     min-width: 250px;
     nav{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 30% 70%;
         background-color: #F2f2f2;
         width: 100%;
         div{
@@ -17,23 +16,35 @@ header {
                 display: flex;
                 flex-wrap: wrap;
                 position: relative;
-                background-color: #F2f2f2;
-                width: 300px;
-                min-width: 250px;
+                background-color:$colorfondo-light;
+                width: 30%;
+                 min-width: 250px;
 
             }
 
         }
 
+        .navbar-toggler {
+           font-family:$fuente-gral ;
+           font-size: 50px;
+           font-style: bold;
+           text-decoration: none;
+        }
+       
+
         ul{
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: auto;
             list-style: none;
-            background-color: #F2f2f2;
-            width: 70%;
+            background-color:$colorfondo-light;
+            width: fit-content;
+            
+           
             li{
-                background-color: #F2f2f2;
+                
+                background-color:$colorfondo-light;
                 list-style: none;
+                
                 a:hover{
                     transform: scale(1.2);
                     transition:2s;
@@ -41,11 +52,11 @@ header {
                 a{
                     align-items: center;
                     position: relative;
-                    background-color: #F2f2f2;
+                    background-color:$colorfondo-light;
                     text-decoration: none;
-                    font-family:'Karma', serif ;
-                    color: #000;
-                    font-size: 25px;
+                    font-family:$fuente-gral;
+                    color: $color-letras;
+                    font-size: 15px;
                     font-weight: 200;
                     font-style:normal; 
 
@@ -53,7 +64,7 @@ header {
             }
             
         }
-        }
     }
+}
 
     

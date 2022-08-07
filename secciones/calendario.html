@@ -15,77 +15,106 @@
     <meta name="viewport" content="width=device-widht,initial-scale=1.0">
 </head>
 <body class="body">
+  <div class="home_R">
     <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                <a ><img class= "logoNav" src="../img/logoHorizontalHeader.jpg" class= "img-fluid" alt="LOGO"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">CONTACTO</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      CURSOS
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="cursos.html">ALUMNO</a></li>
-                      <li><a class="dropdown-item"  href="empresas.html">EMPRESAS</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="calendario.html">CALENDARIO</a></li>
-                      
-                    </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Explorador</a>
-                </li>
-              </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <div class="navLogo ">
+            <a ><img class= "img-fluid" src="../img/logoHorizontalHeader.png"  alt="LOGO"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> =</button>
+          <div class="collapse navbar-collapse nav-item" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CURSOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="cursos.html">ALUMNO</a></li>
+                  <li><a class="dropdown-item"  href="empresas.html">EMPRESAS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="calendario.html">CALENDARIO</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <section>
-        <div class="calendarioCursos">
+      <!--MAIN-->
+    <section class="calendarioMain">
+      <div class="container-fluid calendarioTexto" > 
+            <h2>¡Encontra la fecha de tu proxima capacitacion!</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>LOS CUPOS SON LIMITADOS</h3>
+      </div>      
+        <div class=" container-fluid calendarioCursos">
             
             <iframe  src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FArgentina%2FSan_Luis&src=c3VtYXJzYWx1ZGNhcGFjaXRhY2lvbmVzQGdtYWlsLmNvbQ&color=%23039BE5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
            
      </div>
 
     </section>
-    <footer class="footer">
-        <nav class="navbarFooter navbar-expand-lg  row">
-            <div class="container-fluid">
+       <!--FOOTER-->
+       <footer class="footer">
+        <nav class="navbarFooter navbar-expand-sm row">
+            <div class="container-fluid footer">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" me-5>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse"  me-5>
+                <ul class="navbar-nav me-auto footerlist">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href= "https://wa.me/message/OLFQDSZPAKBRC1" target="_blank">WHATSAPP</a>
+                    <a class="nav-link active" aria-current="page" href= "https://wa.me/message/OLFQDSZPAKBRC1" target="_blank"><img src="../img/iconos/whatsapp.png " width="100%" height="100%" alt="Whatsapp"></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/sumar.saludcapacitaciones/about" target="_blank">FACEBOOK</a>
+                    <a class="nav-link" href="https://www.facebook.com/sumar.saludcapacitaciones/about" target="_blank"><img src="../img/iconos/facebook.png " width="100%" height="100%" alt="facebook"> </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/sumarsalud.cap/" target="_blank">INSTAGRAM</a>
+                    <span class="icon-instagram"></span>
+                    <a class="nav-link" href="https://www.instagram.com/sumarsalud.cap/" target="_blank"><img src="../img/iconos/instagram.png " width="100%" height="100%" alt="instagram"></a>
+                    
                   </li>
                 </ul>
-               
               </div>
             </div>
+            <div class="footerForm"></div>
+              <form>
+                <div class="formDiv">
+                  <br>
+                  <label for="exampleInputEmail1" class="form-label">Usuario/E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu información con nadie.</div>
+                </div>
+                <div class="formDiv">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class=" formDiv form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Recordar mis datos.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+              </form>
+            </div>  
           </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    </div>
+  </body>
 </html>

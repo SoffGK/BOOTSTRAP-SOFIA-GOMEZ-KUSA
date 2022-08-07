@@ -1,32 +1,34 @@
 .formularioContacto {
     font-family:'Mulish', sans-serif;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
     margin-bottom: 100px;
     border-style: double;
-    border-color: #f20f0f;
+    border-color: $colorfooterybordes;
     border-width: 8px;
     padding: 20px;
     border-radius: 20px;
-    background-color:#F2F2F2;
+    background-color:$colorfondo-light;
     padding: 10px;
     inline-size: auto;
     text-align: left;
-    color: #000000;
+    color:$color-letras;
+    justify-content: center;
+    width: 50%;
     input{
-        background-color: #f20f0f;
-        color: #000;
+        background-color: $colorfooterybordes;
+        color: $color-letras;
         border-color: #EEEEEE;
-        font-family: 'Mulish', sans-serif;
+        font-family: $fuente-otros;
         font-style: bold;
 
     }
     select{
-        background-color: #f20f0f;
-    color: #000;
+        background-color: $colorfooterybordes;
+    color:$color-letras;
     border-color: #EEEEEE;
-    font-family: 'Mulish', sans-serif;
+    font-family: $fuente-otros;
     font-style: bold;
 
     }

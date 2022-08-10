@@ -1,16 +1,20 @@
 
 
 
-
-
+//RESET, VARIABLES y MIXIN
 @import "./utlities/_reset";
 
 @import"./utlities/_variables";
+
+@import"./utlities/_mixin";
+
+//HEADER Y BODY
 
 @import"./layout/header";
 
 @import"./layout/body";
 
+//COMPONENTES DE PAGINAS
 @import"./components/articulos";
 
 @import"./components/contacto";
@@ -20,6 +24,8 @@
 @import"./components/cursos__empresas";
 
 @import"./components/calendario";
+
+//FOOTER
 
 @import"./layout/footer";
 

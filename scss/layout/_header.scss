@@ -50,15 +50,7 @@ header {
                     transition:2s;
                 }
                 a{
-                    align-items: center;
-                    position: relative;
-                    background-color:$colorfondo-light;
-                    text-decoration: none;
-                    font-family:$fuente-gral;
-                    color: $color-letras;
-                    font-size: 15px;
-                    font-weight: 200;
-                    font-style:normal; 
+                   @include navBarText;
 
                 }
             }

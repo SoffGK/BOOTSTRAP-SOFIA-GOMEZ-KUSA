@@ -122,21 +122,13 @@ body {
   justify-content: center;
   width: 50%;
 }
-.formularioContacto input {
+.formularioContacto .input, .formularioContacto select {
   background-color: #D91122;
   color: #000000;
   border-color: #EEEEEE;
   font-family: "Mulish", sans-serif;
   font-style: bold;
 }
-.formularioContacto select {
-  background-color: #D91122;
-  color: #000000;
-  border-color: #EEEEEE;
-  font-family: "Mulish", sans-serif;
-  font-style: bold;
-}
-
 .cursosCards {
   display: flex;
   flex-direction: row;
@@ -191,13 +183,18 @@ body {
 
 .calendarioMain {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 40% 50%;
+  grid-auto-flow: row;
+  justify-content: space-around;
   grid-row: 2fr;
   width: fit-content;
+  margin-top: 7%;
 }
 .calendarioMain .calendarioTexto {
-  margin-top: 35%;
-  margin-right: 15%;
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  margin-top: 20%;
+  margin-right: 40%;
   margin-left: 15%;
   font-family: "Karma", serif;
   font-size: 40%;
@@ -205,17 +202,23 @@ body {
   font-style: bold;
   text-align: justify;
 }
-.calendarioMain .calendarioCursos {
-  display: flex;
-  flex-wrap: wrap;
+.calendarioMain .calendarioTexto .calendarioH2 {
+  margin-bottom: 5%;
+}
+.calendarioMain .calendarioTexto .calendarioH3 {
   margin-top: 10%;
   margin-bottom: 5%;
-  margin-left: 20%;
-  justify-items: center;
-  justify-content: space-between;
-  align-content: center;
-  width: auto;
-  height: auto;
+}
+.calendarioMain .calendarioTexto .calendarioCursos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  align-self: flex-end;
+  width: 105%;
+  height: 105%;
 }
 
 footer {
@@ -256,6 +259,15 @@ footer nav .footerForm {
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 5%;
+}
+footer nav .footerForm .formDiv {
+  font-size: small;
+  font-family: "Karma", serif;
+  width: min-content;
+}
+footer nav .footerForm .formDiv .form-label {
+  font-size: small;
+  font-family: "Karma", serif;
 }
 
 .nav-link {

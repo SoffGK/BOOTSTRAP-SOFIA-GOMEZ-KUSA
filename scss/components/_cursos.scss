@@ -1,10 +1,6 @@
 .cursosCards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-   justify-content: center;
-    align-content: center;
+    @include flexCard;
+    
     .card:hover{
         transform:scale(1.6);
         transition: 3s;

@@ -1,18 +1,6 @@
 footer{
-    display: grid;
-    grid-template-columns: 45% 40%;
-    grid-template-rows: 1fr;
-    justify-content: space-between;
-    list-style: none;
-    text-decoration: none;
-    color:$color-letras;
-    background-color:$colorfooterybordes;
-    font-family: 'Mulish', sans-serif ;
-    margin-top: 10%;
-    margin-bottom: 0px;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
+    @include footerGrid;
+    
     nav{
                
         .footerlist{
@@ -39,6 +27,17 @@ footer{
             margin-top: 5%;
             margin-bottom: 5%;
             padding: 5%;
+
+            .formDiv{
+                font-size: small;
+                font-family:$fuente-gral ;
+                
+                
+                .form-label{
+                    font-size: small;
+                    font-family:$fuente-gral ;
+                }
+            }
 
         }
     }

@@ -1,12 +1,18 @@
 .calendarioMain{
     display:grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 40% 50%;
+    grid-auto-flow: row;
+    justify-content: space-around;
     grid-row: 2fr;
     width: fit-content;
+    margin-top: 7%;
+    
 
 .calendarioTexto{
-    margin-top: 35%;
-    margin-right: 15%;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    margin-top: 20%;
+    margin-right: 40%;
     margin-left: 15%;
     font-family:$fuente-gral;
     font-size: 40%;
@@ -14,19 +20,29 @@
     font-style: bold;
     text-align: justify;
 
+    .calendarioH2{
+        margin-bottom: 5%;
+        
+
+    }
+
+    .calendarioH3{
+       margin-top: 10%;
+       margin-bottom: 5%;
+
 }
 .calendarioCursos {
     display: flex;
     flex-wrap: wrap;
+    padding: 10%;
     margin-top: 10%;
-    margin-bottom: 5%; 
-    margin-left: 20%;
-    justify-items: center;
-    justify-content: space-between;
-    align-content: center;
-    width: auto;
-    height: auto;
+    margin-bottom: 10%; 
+    margin-left: 10%;
+    align-self: flex-end;
+    width: 105%;
+    height: 105%;
     
 
+}
 }
 }

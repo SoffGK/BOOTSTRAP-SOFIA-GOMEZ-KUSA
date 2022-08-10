@@ -16,7 +16,7 @@
     color:$color-letras;
     justify-content: center;
     width: 50%;
-    input{
+    .input{
         background-color: $colorfooterybordes;
         color: $color-letras;
         border-color: #EEEEEE;
@@ -25,11 +25,7 @@
 
     }
     select{
-        background-color: $colorfooterybordes;
-    color:$color-letras;
-    border-color: #EEEEEE;
-    font-family: $fuente-otros;
-    font-style: bold;
+       @extend.input;
 
     }
 }

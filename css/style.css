@@ -9,6 +9,14 @@
   flex-wrap: wrap;
 }
 
+@media screen and (min-with: 768px) {
+  .calendarioMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 /* Colores
 #F15412 Rojo
 #000000 Negro
@@ -129,6 +137,12 @@ body {
   font-family: "Mulish", sans-serif;
   font-style: bold;
 }
+.formularioContacto .input_box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15%;
+}
+
 .cursosCards {
   display: flex;
   flex-direction: row;
@@ -183,7 +197,7 @@ body {
 
 .calendarioMain {
   display: grid;
-  grid-template-columns: 40% 50%;
+  grid-template-columns: 30% 50%;
   grid-auto-flow: row;
   justify-content: space-around;
   grid-row: 2fr;
@@ -263,7 +277,6 @@ footer nav .footerForm {
 footer nav .footerForm .formDiv {
   font-size: small;
   font-family: "Karma", serif;
-  width: min-content;
 }
 footer nav .footerForm .formDiv .form-label {
   font-size: small;

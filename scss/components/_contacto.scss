@@ -28,4 +28,9 @@
        @extend.input;
 
     }
+    .input_box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 15%;
+    }
 }

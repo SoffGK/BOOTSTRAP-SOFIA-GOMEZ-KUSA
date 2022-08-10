@@ -1,11 +1,12 @@
 .calendarioMain{
     display:grid;
-    grid-template-columns: 40% 50%;
+    grid-template-columns: 30% 50%;
     grid-auto-flow: row;
     justify-content: space-around;
     grid-row: 2fr;
     width: fit-content;
     margin-top: 7%;
+  
     
 
 .calendarioTexto{

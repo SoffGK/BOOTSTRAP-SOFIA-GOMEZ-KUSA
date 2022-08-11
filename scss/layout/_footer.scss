@@ -1,48 +1,153 @@
 footer{
     @include footerGrid;
     
-    nav{
-               
-        .footerlist{
-            display: grid;
-            grid-template-rows: 0.5fr 0.5fr 0.5fr;
-            grid-template-columns: 98%;
-            width: 100%;
-            margin-top: 1%;
-            margin-bottom: 1%;
-            li{
-                width:15%;
-               
-                a{
-                   padding: 0%;
-
-                }
-            }
-        }
-        .footerForm{
-            width: fit-content;
-            height: 5%;
-            font-family:'Karma', serif ;
-            margin-right: 5%;
-            margin-top: 5%;
-            margin-bottom: 5%;
-            padding: 5%;
-
-            .formDiv{
-                font-size: small;
-                font-family:$fuente-gral ;
-                
-                
-                .form-label{
-                    font-size: small;
-                    font-family:$fuente-gral ;
-                }
-            }
-
-        }
+    .navRedes{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        margin-bottom: 0%;
+        margin-top: 27%;
+        margin-right: 10%;
+        margin-left: 50%;
+        
     }
-}
+    }
+               
+        
+            
+        
+        
+       
+            
+ .nav-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Karma', serif ;
+     color: $color-letras;
+    font-size: 25px;
+    font-weight: 200;
+    font-style:normal;  
+   }           
+               
+        
+    
 
+
+
+
+.cardfooter {
+    padding: 4%;
+    margin-top: 1.5%;
+    margin-bottom: 0.5%;
+    margin-left: 10%;
+    width: 35%;
+    text-align: center;
+    background: #2B88D9;
+    
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: .5em;
+    background-color: #1f2029;
+    border-radius: 5%;
+    padding: .5em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: $colorfooterybordes;
+   }
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+   
+   /*Text*/
+   .title {
+    margin-bottom: 1rem;
+    font-size:150%;
+    font-style: bold;
+    color: #f5f5f5;
+   }
+   
+   /*Buttons*/
+   .btn {
+    margin: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color:$colorfooterybordes;
+    color: #5e6681;
+    -webkit-box-shadow: 0 1% 5% 0 rgb(255 235 167 / 20%);
+            box-shadow: 0 1% 5% 0 rgb(255 235 167 / 20%);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+   }
+   
+   .btn-link {
+    color: $colorfondo-light;
+    display: block;
+    font-size: .75em;
+    -webkit-transition: color .3s ease-out;
+    transition: color .3s ease-out;
+   }
+   
+   /*Hover & focus*/
+   .field input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+   }
+   .field input:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: opacity .3s;
+    transition: opacity .3s;
+   }
+   .field input:focus:-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+   }
+   .field input:focus::-ms-input-placeholder {
+    opacity: 0;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+   }
+   .field input:focus::placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+   }
+   
+   .btn:hover {
+    background-color: $colorfondos-gral;
+    color:$colorfooterybordes;
+    -webkit-box-shadow: 0 1% 5% 0 rgb(16 39 112 / 20%);
+            box-shadow: 0 1% 5% 0 rgb(16 39 112 / 20%);
+   }
+   
 .nav-link{
     display: flex;
     flex-direction: row;
@@ -54,4 +159,5 @@ footer{
             font-size: 25px;
             font-weight: 200;
             font-style:normal;  
-}
+   }
+   

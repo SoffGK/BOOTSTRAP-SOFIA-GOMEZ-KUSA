@@ -13,17 +13,12 @@
     color: $color-empresas;
     transition: 1.5s;
 }
-.empresascards{
-    margin-bottom: 110px;
-    margin-top: 80px;
-    div{
-    .card-bodyEmpresas{
-        background-color:$color-empresas;
-        .card-text{
-            font-family:$fuente-gral;
-            font-style: bold;
 
-        }
-    }
-}
+.backempresas {
+    transform: rotateY(0.5turn);
+    background-color:$color-empresas;
+  }
+
+.contEmpresas{
+    background-color:$colorfooterybordes;
 }

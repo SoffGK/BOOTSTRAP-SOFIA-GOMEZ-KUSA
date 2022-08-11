@@ -1,49 +1,82 @@
 .calendarioMain{
-    display:grid;
-    grid-template-columns: 30% 50%;
-    grid-auto-flow: row;
-    justify-content: space-around;
-    grid-row: 2fr;
-    width: fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 7%;
   
     
-
-.calendarioTexto{
-    display: grid;
-    grid-template-rows: 3fr 2fr;
-    margin-top: 20%;
-    margin-right: 40%;
-    margin-left: 15%;
-    font-family:$fuente-gral;
-    font-size: 40%;
-    color: $color-letras;
-    font-style: bold;
-    text-align: justify;
-
-    .calendarioH2{
-        margin-bottom: 5%;
-        
-
-    }
-
-    .calendarioH3{
-       margin-top: 10%;
-       margin-bottom: 5%;
-
 }
 .calendarioCursos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%; 
-    margin-left: 10%;
-    align-self: flex-end;
-    width: 105%;
-    height: 105%;
+    display: grid;
+    grid-template-columns: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+   
     
 
 }
-}
-}
+
+
+
+
+.cardDate {
+   display: grid;
+   grid-column: 98%;
+    cursor: pointer;
+    margin-right: 5%;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: rgb(127, 204, 240);
+    padding: 5em;
+    transform-style: preserve-3d;
+  }
+  
+  .cardDate:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  .title {
+    transform: translateZ(3rem);
+    font-size: 2rem;
+    font-family: $fuente-gral;
+
+  }
+  
+  .subtitle {
+    transform: translateZ(2rem);
+    font-size:1.5rem ;
+    font-family: $fuente-gral;
+  }
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color: #009bff;
+  }
+  
+  .description {
+    transform: translateZ(3rem);
+    font-family: $fuente-gral;
+    font-size: 2rem;
+  }
+
+

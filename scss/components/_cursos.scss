@@ -1,21 +1,59 @@
 .cursosCards{
-    @include flexCard;
-    
-    .card:hover{
-        transform:scale(1.6);
-        transition: 3s;
-    }
-    .card{
-        margin: 20px;
-        padding: 10px;
-        .card-body{
-            background-color: $colorfooterybordes;
-            p{
-                font-family:$fuente-gral;
-                font-style: bold;
-            }
-        }
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;        
 }
 
  
+ 
+.card {
+    
+    cursor: pointer;
+    margin: 5%;
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: #34B3F1;
+    padding: 5em;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  .title {
+    transform: translateZ(5rem);
+    
+  }
+  
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color:$colorfooterybordes;
+    font-family: $fuente-otros;
+    color: $color-letras;
+    font-style: bold;
+  }
+  
+  .description {
+    transform: translateZ(3rem);
+  }
+  

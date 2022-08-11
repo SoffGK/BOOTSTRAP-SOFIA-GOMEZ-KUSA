@@ -115,56 +115,202 @@ body {
   font-family: "Mulish", sans-serif;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   border-style: double;
   border-color: #D91122;
   border-width: 8px;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 4%;
+  border-radius: 10px;
   background-color: #f2f2f2;
   padding: 10px;
   inline-size: auto;
   text-align: left;
   color: #000000;
   justify-content: center;
-  width: 50%;
 }
 .formularioContacto .input, .formularioContacto select {
   background-color: #D91122;
   color: #000000;
-  border-color: #EEEEEE;
   font-family: "Mulish", sans-serif;
   font-style: bold;
+  border: none;
 }
-.formularioContacto .input_box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 15%;
+.formularioContacto .textarea {
+  margin: 2%;
+  width: 50%;
+  height: 20%;
+}
+.formularioContacto .inputcard {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #777;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #0d0c22;
+  -webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.formularioContacto .inputcard .inputcard:focus, .formularioContacto .inputcard input:hover {
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+}
+.formularioContacto .inputcard .inputcard::-webkit-input-placeholder {
+  color: #777;
+}
+.formularioContacto .inputcard .inputcard::-moz-placeholder {
+  color: #777;
+}
+.formularioContacto .inputcard .inputcard:-ms-input-placeholder {
+  color: #777;
+}
+.formularioContacto .inputcard .inputcard::-ms-input-placeholder {
+  color: #777;
+}
+.formularioContacto .inputcard .inputcard::placeholder {
+  color: #777;
+}
+.formularioContacto .inputcard .inputcard:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.formularioContacto .inputcard .inputcard:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.formularioContacto .inputcard .inputcard:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.formularioContacto .inputcard .inputcard:focus::-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.formularioContacto .inputcard .inputcard:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.formularioContacto .inputcard .cta {
+  border: none;
+  background: none;
+}
+.formularioContacto .inputcard .cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+.formularioContacto .inputcard .cta svg {
+  -webkit-transform: translateX(-8px);
+  -ms-transform: translateX(-8px);
+  transform: translateX(-8px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.formularioContacto .inputcard .cta .cta:hover svg {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.formularioContacto .inputcard .cta:active svg {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.formularioContacto .inputcard .hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+.formularioContacto .inputcard .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+.formularioContacto .inputcard .cta:hover .hover-underline-animation:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
 }
 
 .cursosCards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
-.cursosCards .card:hover {
-  transform: scale(1.6);
-  transition: 3s;
+
+.card {
+  cursor: pointer;
+  margin: 5%;
 }
-.cursosCards .card {
-  margin: 20px;
-  padding: 10px;
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-color: #34B3F1;
+  padding: 5em;
+  transform-style: preserve-3d;
 }
-.cursosCards .card .card-body {
+
+.card:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  transform: translateZ(5rem);
+}
+
+.back {
+  transform: rotateY(0.5turn);
   background-color: #D91122;
-}
-.cursosCards .card .card-body p {
-  font-family: "Karma", serif;
+  font-family: "Mulish", sans-serif;
+  color: #000000;
   font-style: bold;
+}
+
+.description {
+  transform: translateZ(3rem);
 }
 
 .tituloEmpresas {
@@ -183,62 +329,91 @@ body {
   transition: 1.5s;
 }
 
-.empresascards {
-  margin-bottom: 110px;
-  margin-top: 80px;
-}
-.empresascards div .card-bodyEmpresas {
+.backempresas {
+  transform: rotateY(0.5turn);
   background-color: #efb810;
 }
-.empresascards div .card-bodyEmpresas .card-text {
-  font-family: "Karma", serif;
-  font-style: bold;
+
+.contEmpresas {
+  background-color: #D91122;
 }
 
 .calendarioMain {
-  display: grid;
-  grid-template-columns: 30% 50%;
-  grid-auto-flow: row;
-  justify-content: space-around;
-  grid-row: 2fr;
-  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 7%;
 }
-.calendarioMain .calendarioTexto {
+
+.calendarioCursos {
   display: grid;
-  grid-template-rows: 3fr 2fr;
-  margin-top: 20%;
-  margin-right: 40%;
-  margin-left: 15%;
+  grid-template-columns: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.cardDate {
+  display: grid;
+  grid-column: 98%;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-color: rgb(127, 204, 240);
+  padding: 5em;
+  transform-style: preserve-3d;
+}
+
+.cardDate:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  transform: translateZ(3rem);
+  font-size: 2rem;
   font-family: "Karma", serif;
-  font-size: 40%;
-  color: #000000;
-  font-style: bold;
-  text-align: justify;
 }
-.calendarioMain .calendarioTexto .calendarioH2 {
-  margin-bottom: 5%;
+
+.subtitle {
+  transform: translateZ(2rem);
+  font-size: 1.5rem;
+  font-family: "Karma", serif;
 }
-.calendarioMain .calendarioTexto .calendarioH3 {
-  margin-top: 10%;
-  margin-bottom: 5%;
+
+.back {
+  transform: rotateY(0.5turn);
+  background-color: #009bff;
 }
-.calendarioMain .calendarioTexto .calendarioCursos {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  align-self: flex-end;
-  width: 105%;
-  height: 105%;
+
+.description {
+  transform: translateZ(3rem);
+  font-family: "Karma", serif;
+  font-size: 2rem;
 }
 
 footer {
   display: grid;
-  grid-template-columns: 45% 40%;
-  grid-template-rows: 1fr;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: 2fr;
   justify-content: space-between;
   list-style: none;
   text-decoration: none;
@@ -251,36 +426,140 @@ footer {
   height: 100%;
   justify-content: space-between;
 }
-footer nav .footerlist {
-  display: grid;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr;
-  grid-template-columns: 98%;
+footer .navRedes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin-bottom: 0%;
+  margin-top: 27%;
+  margin-right: 10%;
+  margin-left: 50%;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Karma", serif;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.cardfooter {
+  padding: 4%;
+  margin-top: 1.5%;
+  margin-bottom: 0.5%;
+  margin-left: 10%;
+  width: 35%;
+  text-align: center;
+  background: #2B88D9;
+}
+
+/*Inputs*/
+.field {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: #1f2029;
+  border-radius: 5%;
+  padding: 0.5em 1em;
+}
+
+.input-icon {
+  height: 1em;
+  width: 1em;
+  fill: #D91122;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
   width: 100%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  color: #d3d3d3;
 }
-footer nav .footerlist li {
-  width: 15%;
+
+/*Text*/
+.title {
+  margin-bottom: 1rem;
+  font-size: 150%;
+  font-style: bold;
+  color: #f5f5f5;
 }
-footer nav .footerlist li a {
-  padding: 0%;
+
+/*Buttons*/
+.btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  background-color: #D91122;
+  color: #5e6681;
+  -webkit-box-shadow: 0 1% 5% 0 rgba(255, 235, 167, 0.2);
+  box-shadow: 0 1% 5% 0 rgba(255, 235, 167, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-footer nav .footerForm {
-  width: fit-content;
-  height: 5%;
-  font-family: "Karma", serif;
-  margin-right: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 5%;
+
+.btn-link {
+  color: #f2f2f2;
+  display: block;
+  font-size: 0.75em;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
-footer nav .footerForm .formDiv {
-  font-size: small;
-  font-family: "Karma", serif;
+
+/*Hover & focus*/
+.field input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
-footer nav .footerForm .formDiv .form-label {
-  font-size: small;
-  font-family: "Karma", serif;
+
+.field input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.field input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.field input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.field input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  background-color: #3084F2;
+  color: #D91122;
+  -webkit-box-shadow: 0 1% 5% 0 rgba(16, 39, 112, 0.2);
+  box-shadow: 0 1% 5% 0 rgba(16, 39, 112, 0.2);
 }
 
 .nav-link {

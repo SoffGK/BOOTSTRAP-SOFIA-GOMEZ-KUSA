@@ -2,35 +2,172 @@
     font-family:'Mulish', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     border-style: double;
     border-color: $colorfooterybordes;
     border-width: 8px;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 4%;
+    border-radius: 10px;
     background-color:$colorfondo-light;
     padding: 10px;
     inline-size: auto;
     text-align: left;
     color:$color-letras;
     justify-content: center;
-    width: 50%;
+    
     .input{
         background-color: $colorfooterybordes;
         color: $color-letras;
-        border-color: #EEEEEE;
         font-family: $fuente-otros;
         font-style: bold;
+        border: none;
 
     }
     select{
        @extend.input;
 
     }
-    .input_box{
-        display: flex;
-        flex-wrap: wrap;
-        width: 15%;
+    .textarea{
+        margin: 2%;
+        width: 50%;
+        height: 20%;
+
     }
+
+    
+    .inputcard {
+        line-height: 28px;
+        border: 2px solid transparent;
+        border-bottom-color: #777;
+        padding: .2rem 0;
+        outline: none;
+        background-color: transparent;
+        color: #0d0c22;
+        -webkit-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+       
+       
+       .inputcard:focus, input:hover {
+        outline: none;
+        padding: .2rem 1rem;
+        border-radius: 1rem;
+        border-color: #7a9cc6;
+       }
+       
+       .inputcard::-webkit-input-placeholder {
+        color: #777;
+       }
+       
+       .inputcard::-moz-placeholder {
+        color: #777;
+       }
+       
+       .inputcard:-ms-input-placeholder {
+        color: #777;
+       }
+       
+       .inputcard::-ms-input-placeholder {
+        color: #777;
+       }
+       
+       .inputcard::placeholder {
+        color: #777;
+       }
+       
+       .inputcard:focus::-webkit-input-placeholder {
+        opacity: 0;
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s;
+       }
+       
+       .inputcard:focus::-moz-placeholder {
+        opacity: 0;
+        -moz-transition: opacity .3s;
+        transition: opacity .3s;
+       }
+       
+       .inputcard:focus:-ms-input-placeholder {
+        opacity: 0;
+        -ms-transition: opacity .3s;
+        transition: opacity .3s;
+       }
+       
+       .inputcard:focus::-ms-input-placeholder {
+        opacity: 0;
+        -ms-transition: opacity .3s;
+        transition: opacity .3s;
+       }
+       
+       .inputcard:focus::placeholder {
+        opacity: 0;
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s;
+       }
+       .cta {
+        border: none;
+        background: none;
+
+        span {
+            padding-bottom: 7px;
+            letter-spacing: 4px;
+            font-size: 10px;
+            padding-right: 15px;
+            text-transform: uppercase;
+           }
+        svg {
+            -webkit-transform: translateX(-8px);
+                -ms-transform: translateX(-8px);
+                    transform: translateX(-8px);
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+           }
+           .cta:hover svg {
+            -webkit-transform: translateX(0);
+                -ms-transform: translateX(0);
+                    transform: translateX(0);
+           }        
+       }
+       .cta:active svg {
+        -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+                transform: scale(0.9);
+       }
+       
+       .hover-underline-animation {
+        position: relative;
+        color: black;
+        padding-bottom: 20px;
+       }
+       
+       .hover-underline-animation:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+                transform: scaleX(0);
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        -webkit-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+                transform-origin: bottom right;
+        -webkit-transition: -webkit-transform 0.25s ease-out;
+        transition: -webkit-transform 0.25s ease-out;
+        transition: transform 0.25s ease-out;
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+       }
+       
+       .cta:hover .hover-underline-animation:after {
+        -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+                transform: scaleX(1);
+        -webkit-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+                transform-origin: bottom left;
+       }
 }
+}
+

@@ -30,7 +30,18 @@ header {
            font-style: bold;
            text-decoration: none;
         }
-       
+        .nav-link{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+            text-decoration: none;
+            font-family:'Karma', serif ;
+             color: $color-letras;
+            font-size: 25px;
+            font-weight: 200;
+            font-style:normal;  
+           }      
 
         ul{
             display: grid;

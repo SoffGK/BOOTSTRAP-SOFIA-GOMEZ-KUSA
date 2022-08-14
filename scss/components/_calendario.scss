@@ -1,22 +1,35 @@
+
+.calTiltulo{
+    display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  font-family: $fuente-gral;
+  color: $color-letras;
+  align-content: center;
+  margin-top: 2%;
+  justify-content: center;
+}
 .calendarioMain{
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 98%;
+    grid-template-rows: 2fr 2fr;
+    flex-wrap: wrap;
+
     justify-content: space-between;
     width: 100%;
     margin-top: 7%;
   
     
 }
-.calendarioCursos {
-    display: grid;
-    grid-template-columns: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    
-   
-    
-
+.cardVentaContainer{
+display: flex;
+flex-wrap: wrap;
+flex: row;
+justify-content: space-around;
+align-content: center;
+padding: 2%;
 }
+
 
 
 
@@ -24,11 +37,13 @@
 .cardDate {
    display: grid;
    grid-column: 98%;
-    cursor: pointer;
-    margin-right: 5%;
-    margin-left: 0%;
-    margin-top: 0%;
+   cursor: pointer;
+   align-content: center;
+   margin-top: 3%;
+    
   }
+
+  
   
   .content {
     text-align: center;
@@ -73,10 +88,67 @@
     background-color: #009bff;
   }
   
-  .description {
-    transform: translateZ(3rem);
-    font-family: $fuente-gral;
-    font-size: 2rem;
-  }
+ .descriptionCal {
+   transform: translateZ(3rem);
+   font-family: $fuente-gral;
+   font-size:1.5rem ;
+    
+ }
 
 
+
+.cardVenta {
+  border-radius: 1.25rem;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 0.125rem solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  
+ }
+ 
+ .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ /*Hover*/
+ .card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 0.25rem 1.125rem 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .cardVenta:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }

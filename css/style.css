@@ -9,12 +9,16 @@
   flex-wrap: wrap;
 }
 
-@media screen and (min-with: 768px) {
-  .calendarioMain {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (min-width: 500px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .cardDate {
+    width: 200px;
   }
 }
 /* Colores
@@ -59,6 +63,18 @@ header nav .navbar-toggler {
   font-size: 50px;
   font-style: bold;
   text-decoration: none;
+}
+header nav .nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Karma", serif;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 200;
+  font-style: normal;
 }
 header nav ul {
   display: grid;
@@ -115,8 +131,8 @@ body {
   font-family: "Mulish", sans-serif;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-style: double;
   border-color: #D91122;
   border-width: 8px;
@@ -304,13 +320,16 @@ body {
 .back {
   transform: rotateY(0.5turn);
   background-color: #D91122;
+  font-style: bold;
+  font-size: small;
+}
+
+.descriptionCursos {
+  transform: translateZ(3rem);
   font-family: "Mulish", sans-serif;
   color: #000000;
   font-style: bold;
-}
-
-.description {
-  transform: translateZ(3rem);
+  font-size: small;
 }
 
 .tituloEmpresas {
@@ -338,28 +357,42 @@ body {
   background-color: #D91122;
 }
 
-.calendarioMain {
+.calTiltulo {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Karma", serif;
+  color: #000000;
+  align-content: center;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.calendarioMain {
+  display: grid;
+  grid-template-columns: 98%;
+  grid-template-rows: 2fr 2fr;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-top: 7%;
 }
 
-.calendarioCursos {
-  display: grid;
-  grid-template-columns: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+.cardVentaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: row;
+  justify-content: space-around;
+  align-content: center;
+  padding: 2%;
 }
 
 .cardDate {
   display: grid;
   grid-column: 98%;
   cursor: pointer;
-  margin-right: 5%;
-  margin-left: 0%;
-  margin-top: 0%;
+  align-content: center;
+  margin-top: 3%;
 }
 
 .content {
@@ -404,10 +437,65 @@ body {
   background-color: #009bff;
 }
 
-.description {
+.descriptionCal {
   transform: translateZ(3rem);
   font-family: "Karma", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+.cardVenta {
+  border-radius: 1.25rem;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 0.125rem solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 0.25rem 1.125rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.cardVenta:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
 
 footer {
@@ -424,36 +512,85 @@ footer {
   margin-bottom: 0px;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
 }
-footer .navRedes {
+footer .redesbt {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-content: flex-end;
-  margin-bottom: 0%;
-  margin-top: 27%;
-  margin-right: 10%;
-  margin-left: 50%;
-}
-
-.nav-link {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Karma", serif;
-  color: #000000;
-  font-size: 25px;
-  font-weight: 200;
-  font-style: normal;
+  padding: 0%;
+  align-items: flex-end;
+  margin-left: 3%;
+}
+footer .buttonredes1 {
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: 10em;
+  background: #25D366;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+}
+footer .buttonredes2 {
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: 10em;
+  background: #016DD9;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+}
+footer .buttonredes3 {
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: 10em;
+  background: #DD2A7B;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+}
+footer .buttonredes:hover {
+  animation: shake3856 0.3s linear infinite both;
+}
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
 }
 
 .cardfooter {
-  padding: 4%;
+  padding: 3%;
   margin-top: 1.5%;
   margin-bottom: 0.5%;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 0%;
   width: 35%;
   text-align: center;
   background: #2B88D9;

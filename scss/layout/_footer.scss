@@ -9,48 +9,56 @@ footer{
         align-items: flex-end;
         margin-left: 3%;
                
-        
+        .buttonredes1 {
+            height: 3em;
+            width: 8em;
+            border: none;
+            border-radius: 10em;
+            background: #25D366;
+            font-size: 17px;
+            color: #ffffff;
+            font-family: $fuente-otros;
+            font-weight: 500;
+            
+           }
+           .buttonredes2 {
+            height: 3em;
+            width: 8em;
+            border: none;
+            border-radius: 10em;
+            background: #016DD9;
+            font-size: 17px;
+            color: #ffffff;
+            font-family: $fuente-otros;
+            font-weight: 500;
+            
+           }
+           .buttonredes3 {
+            height: 3em;
+            width: 8em;
+            border: none;
+            border-radius: 10em;
+            background: #DD2A7B;
+            font-size: 17px;
+            color: #ffffff;
+            font-family:$fuente-otros;
+            font-weight: 500;
+            
+           }
+           
+           .buttonredes:hover {
+            animation: shake3856 0.3s linear infinite both;
+           }
+          .buttonredes{
+            a{
+              text-decoration: none;
+              color: #ffffff;
+              
+
+            }
+          }
     }
-    .buttonredes1 {
-        height: 3em;
-        width: 8em;
-        border: none;
-        border-radius: 10em;
-        background: #25D366;
-        font-size: 17px;
-        color: #ffffff;
-        font-family: inherit;
-        font-weight: 500;
-        
-       }
-       .buttonredes2 {
-        height: 3em;
-        width: 8em;
-        border: none;
-        border-radius: 10em;
-        background: #016DD9;
-        font-size: 17px;
-        color: #ffffff;
-        font-family: inherit;
-        font-weight: 500;
-        
-       }
-       .buttonredes3 {
-        height: 3em;
-        width: 8em;
-        border: none;
-        border-radius: 10em;
-        background: #DD2A7B;
-        font-size: 17px;
-        color: #ffffff;
-        font-family: inherit;
-        font-weight: 500;
-        
-       }
-       
-       .buttonredes:hover {
-        animation: shake3856 0.3s linear infinite both;
-       }
+   
        
        @keyframes shake3856 {
         0% {
@@ -96,6 +104,7 @@ footer{
     width: 35%;
     text-align: center;
     background: #2B88D9;
+    border-radius: 10%;
     
    }
    
@@ -103,7 +112,7 @@ footer{
    .field {
     margin-top: .5rem;
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: -sm-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -198,16 +207,5 @@ footer{
             box-shadow: 0 1% 5% 0 rgb(16 39 112 / 20%);
    }
    
-.nav-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-            text-decoration: none;
-            font-family:'Karma', serif ;
-            color: $color-letras;
-            font-size: 25px;
-            font-weight: 200;
-            font-style:normal;  
-   }
+
    

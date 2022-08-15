@@ -26,7 +26,7 @@ header {
 
         .navbar-toggler {
            font-family:$fuente-gral ;
-           font-size: 50px;
+           font-size: 3rem;
            font-style: bold;
            text-decoration: none;
         }
@@ -38,7 +38,7 @@ header {
             text-decoration: none;
             font-family:'Karma', serif ;
              color: $color-letras;
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-weight: 200;
             font-style:normal;  
            }      
@@ -56,16 +56,36 @@ header {
                 background-color:$colorfondo-light;
                 list-style: none;
                 
-                a:hover{
-                    transform: scale(1.2);
-                    transition:2s;
+                a:hover::before{
+                    transform: scaleX(1);
                 }
                 a{
                    @include navBarText;
-
                 }
+                   a::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(to right, #f2f2f2, #F20F0F, #D91122);
+                    z-index: 1;
+                    transform: scaleX(0);
+                    transform-origin: center;
+                    transition: transform 0.5s ease-in-out;
+                  }
+                  
+                 
+
+                
+               
             }
             
+        }
+        .dropdown-menu{
+            background-color: $colorfondo-light;
+                    
         }
     }
 }

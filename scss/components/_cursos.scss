@@ -48,12 +48,16 @@
   .back {
     transform: rotateY(0.5turn);
     background-color:$colorfooterybordes;
+    font-style: bold;
+    font-size: small;
+    
+  }
+  
+  .descriptionCursos {
+    transform: translateZ(3rem);
     font-family: $fuente-otros;
     color: $color-letras;
     font-style: bold;
-  }
-  
-  .description {
-    transform: translateZ(3rem);
+    font-size: small;
   }
   

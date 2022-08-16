@@ -1,9 +1,12 @@
 .formularioContacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     font-family:'Mulish', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-style: double;
     border-color: $colorfooterybordes;
     border-width: 8px;
@@ -16,12 +19,15 @@
     color:$color-letras;
     justify-content: center;
     
+    
     .input{
-        background-color: $colorfooterybordes;
+        background-color: transparent;
         color: $color-letras;
         font-family: $fuente-otros;
         font-style: bold;
         border: none;
+        border-style:groove;
+        
 
     }
     select{
@@ -104,70 +110,42 @@
         -webkit-transition: opacity .3s;
         transition: opacity .3s;
        }
-       .cta {
+    }
+    button {
+        width: 40%;
+        padding: 1.3em 3em;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15625rem;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
         border: none;
-        background: none;
-
-        span {
-            padding-bottom: 7px;
-            letter-spacing: 4px;
-            font-size: 10px;
-            padding-right: 15px;
-            text-transform: uppercase;
-           }
-        svg {
-            -webkit-transform: translateX(-8px);
-                -ms-transform: translateX(-8px);
-                    transform: translateX(-8px);
-            -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-           }
-           .cta:hover svg {
-            -webkit-transform: translateX(0);
-                -ms-transform: translateX(0);
-                    transform: translateX(0);
-           }        
-       }
-       .cta:active svg {
-        -webkit-transform: scale(0.9);
-            -ms-transform: scale(0.9);
-                transform: scale(0.9);
-       }
+        border-radius: 2.8125rem;
+        box-shadow: 0rem 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      button:hover {
+        background-color: $colorfooterybordes;
+        box-shadow: 0rem  0.9375rem  1.25rem #F15412;
+        color: #fff;
+        transform: translateY(-0.4375rem);
+      }
+      
+      button:active {
+        transform: translateY(0.0625rem);
+      }
        
-       .hover-underline-animation {
-        position: relative;
-        color: black;
-        padding-bottom: 20px;
-       }
        
-       .hover-underline-animation:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0);
-        height: 1.5px;
-        bottom: 0;
-        left: 0;
-        background-color: #000000;
-        -webkit-transform-origin: bottom right;
-            -ms-transform-origin: bottom right;
-                transform-origin: bottom right;
-        -webkit-transition: -webkit-transform 0.25s ease-out;
-        transition: -webkit-transform 0.25s ease-out;
-        transition: transform 0.25s ease-out;
-        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
-       }
-       
-       .cta:hover .hover-underline-animation:after {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1);
-        -webkit-transform-origin: bottom left;
-            -ms-transform-origin: bottom left;
-                transform-origin: bottom left;
-       }
 }
+
+
+
+.modalidadForm{
+    display: flex;
+    flex-wrap: wrap;
 }
 

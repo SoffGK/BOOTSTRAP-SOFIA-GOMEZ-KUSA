@@ -1,9 +1,16 @@
-@media screen and (min-with:768px) {
-    .calendarioMain{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (min-width: 500px) {
+    .footer{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
     
     }
 }
+
+@media only screen and (min-width: 500px) {
+    .cardDate {
+      width: 200px; 
+      
+    }  }
+
+   

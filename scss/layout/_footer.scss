@@ -1,51 +1,110 @@
 footer{
     @include footerGrid;
-    
-    .navRedes{
+    .redesbt{
         display: flex;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        margin-bottom: 0%;
-        margin-top: 27%;
-        margin-right: 10%;
-        margin-left: 50%;
-        
-    }
-    }
+        flex-direction: column;
+        align-content:flex-end;
+        justify-content: space-around;
+        padding: 0%;
+        align-items: flex-end;
+        margin-left: 3%;
                
-        
+        .buttonredes1 {
+            height: 3em;
+            width: 8em;
+            border: none;
+            border-radius: 10em;
+            background: #25D366;
+            font-size: 17px;
+            color: #ffffff;
+            font-family: $fuente-otros;
+            font-weight: 500;
             
-        
-        
+           }
+           .buttonredes2 {
+            height: 3em;
+            width: 8em;
+            border: none;
+            border-radius: 10em;
+            background: #016DD9;
+            font-size: 17px;
+            color: #ffffff;
+            font-family: $fuente-otros;
+            font-weight: 500;
+            
+           }
+           .buttonredes3 {
+            height: 3em;
+            width: 8em;
+            border: none;
+            border-radius: 10em;
+            background: #DD2A7B;
+            font-size: 17px;
+            color: #ffffff;
+            font-family:$fuente-otros;
+            font-weight: 500;
+            
+           }
+           
+           .buttonredes:hover {
+            animation: shake3856 0.3s linear infinite both;
+           }
+          .buttonredes{
+            a{
+              text-decoration: none;
+              color: #ffffff;
+              
+
+            }
+          }
+    }
+   
        
-            
- .nav-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    text-decoration: none;
-    font-family:'Karma', serif ;
-     color: $color-letras;
-    font-size: 25px;
-    font-weight: 200;
-    font-style:normal;  
-   }           
-               
+       @keyframes shake3856 {
+        0% {
+         -webkit-transform: translate(0);
+         transform: translate(0);
+        }
+       
+        20% {
+         -webkit-transform: translate(-2px, 2px);
+         transform: translate(-2px, 2px);
+        }
+       
+        40% {
+         -webkit-transform: translate(-2px, -2px);
+         transform: translate(-2px, -2px);
+        }
+       
+        60% {
+         -webkit-transform: translate(2px, 2px);
+         transform: translate(2px, 2px);
+        }
+       
+        80% {
+         -webkit-transform: translate(2px, -2px);
+         transform: translate(2px, -2px);
+        }
+       
+        100% {
+         -webkit-transform: translate(0);
+         transform: translate(0);
+        }
+       }
         
+    }
     
-
-
-
 
 .cardfooter {
-    padding: 4%;
+    padding: 3%;
     margin-top: 1.5%;
     margin-bottom: 0.5%;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 0%;
     width: 35%;
     text-align: center;
     background: #2B88D9;
+    border-radius: 10%;
     
    }
    
@@ -53,7 +112,7 @@ footer{
    .field {
     margin-top: .5rem;
     display: -webkit-box;
-    display: -ms-flexbox;
+    display: -sm-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -148,16 +207,5 @@ footer{
             box-shadow: 0 1% 5% 0 rgb(16 39 112 / 20%);
    }
    
-.nav-link{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-            text-decoration: none;
-            font-family:'Karma', serif ;
-            color: $color-letras;
-            font-size: 25px;
-            font-weight: 200;
-            font-style:normal;  
-   }
+
    

@@ -522,16 +522,101 @@ body {
 
 main {
   /* Checkbox */
-  /* Boton Terminos y condiciones */
-  /* button styling */
-  /* this is the text, when you hover on button */
-  /* hover */
+  /*BOTONES */
+  /* BOTON PAGAR  */
+  /* BOTON AGREGAR COMPROBANTE */
+  /* BOTON ENVIAR */
+}
+main .tituloformulario {
+  color: #000000;
+  font-family: "Mulish", sans-serif;
+  font-size: xx-large;
+  margin-top: 4%;
+  text-align: center;
+}
+main .inscripcion {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+main .inscripcion .datos1, main .inscripcion .datos2, main .inscripcion .datos3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+main .inscripcion .datos1 .inputGroup, main .inscripcion .datos2 .inputGroup, main .inscripcion .datos3 .inputGroup {
+  margin: 1%;
+  width: 150%;
+  font-family: "Mulish", sans-serif;
+  font-style: bold;
+}
+main .inscripcion .datos4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 50%;
+}
+main .inscripcion .datos4 .select-inscripcion {
+  background-color: transparent;
+  border: none;
+  margin: 2%;
+}
+main .inscripcion .datos4 .select-inscripcion .optionInscription {
+  background-color: transparent;
+  border: none;
+  font-style: bold;
+  margin: 2%;
+  justify-self: flex-start;
+}
+main .inscripcion .datos4 .select-nivel {
+  background-color: transparent;
+  font-style: bold;
+  border: none;
+  margin: 2%;
+  justify-self: flex-end;
+}
+main .datos5 {
+  align-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .datos5 .terminosycondiciones {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+main .datos5 .terminosycondiciones h2 {
+  font-size: small;
+  font-family: "Karma", serif;
+  font-style: bold;
+}
+main .datos6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+main .datos6 button {
+  justify-content: space-around;
 }
 main .inputGroup {
   font-family: "Segoe UI", sans-serif;
   margin: 1em 0 1em 0;
-  max-width: 190px;
   position: relative;
+  text-align: justify;
 }
 main .inputGroup input {
   font-size: 100%;
@@ -551,6 +636,7 @@ main .inputGroup label {
   pointer-events: none;
   transition: all 0.3s ease;
   color: rgb(100, 100, 100);
+  background-color: transparent;
 }
 main .inputGroup :is(input:focus, input:valid) ~ label {
   transform: translateY(-50%) scale(0.9);
@@ -562,13 +648,10 @@ main .inputGroup :is(input:focus, input:valid) ~ label {
 main .inputGroup :is(input:focus, input:valid) {
   border-color: rgb(150, 150, 200);
 }
-main .select-inscripcion {
-  background-color: transparent;
-  border: none;
-}
 main .togglerterminos {
-  width: 72px;
-  margin: 40px auto;
+  width: 10%;
+  margin: 0.25rem auto;
+  align-content: center;
 }
 main .togglerterminos input {
   display: none;
@@ -576,8 +659,8 @@ main .togglerterminos input {
 main .togglerterminos label {
   display: block;
   position: relative;
-  width: 72px;
-  height: 36px;
+  width: 3.125rem;
+  height: 1.5625rem;
   border: 1px solid #d6d6d6;
   border-radius: 36px;
   background: #e4e8e8;
@@ -599,8 +682,8 @@ main .togglerterminos label::after, main .togglerterminos label .toggler-on, mai
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 1.625rem;
-  height: 1.625rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   transform: translateY(-50%) translateX(-50%);
   transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
@@ -647,42 +730,178 @@ main .togglerterminos .path {
     height: 1.25rem;
   }
 }
-main .buttonterminos {
-  margin: 0;
-  background: transparent;
-  padding: 0;
-  border: none;
-}
-main .buttonterminos {
-  --border-right: 0.375rem;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: rgb(252, 82, 82);
-  --fs-size: 0.625rem;
-  letter-spacing: 0.0625rem;
+main .btmain {
   text-decoration: none;
-  display: flex;
-  font-size: var(--fs-size);
-  font-family: "Mulish", sans-serif;
+  font-size: 1em;
   position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 0.0625rem var(--text-stroke-color);
+  border: none;
+  background-color: #26caf8;
+  font-weight: 600;
+  width: 7.225rem;
+  height: 4.125rem;
 }
-main .hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
+main .btnpago {
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  border: none;
+  background-color: #26caf8;
+  font-weight: 600;
+}
+main .btn-1 {
   overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 0.0625rem var(--animation-color);
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-main .buttonterminos:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 1.4375rem var(--animation-color));
+main .btn-1::after {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+main .btn-1:hover {
+  transform: translate(0, -6px);
+  box-shadow: 0.625rem -0.625rem 1.5625rem 0 rgba(143, 64, 248, 0.5), -0.625rem 0.625remx 1.5625rem 0 rgba(39, 200, 255, 0.5);
+}
+main .btn-1:hover::after {
+  transform: rotate(150deg);
+}
+main .icon-btn {
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+main .add-btn:hover {
+  width: 7.5rem;
+}
+main .add-btn::before,
+main .add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: seagreen;
+}
+main .add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+main .add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+main .icon-btn:focus {
+  outline: none;
+}
+main .btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+main .add-btn:hover::before,
+main .add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+main .add-btn:hover .btn-txt {
+  opacity: 1;
+}
+main .add-icon::after,
+main .add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: seagreen;
+  overflow: hidden;
+}
+main .add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+main .add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+main .add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+main .add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+main .btnEnviar {
+  color: white;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 7.225rem;
+  height: 4.125rem;
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  font-weight: 600;
+}
+main .btnEnviar span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+main .btnEnviar svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+main .btnEnviar:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+main .btnEnviar:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+main .btnEnviar:hover span {
+  transform: translateX(5em);
+}
+main .btnEnviar:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
 footer {

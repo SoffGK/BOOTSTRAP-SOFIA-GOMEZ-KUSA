@@ -1,5 +1,5 @@
-/* Colores
-#F15412 Rojo
+/*Colores
+#F15412 Rojo 
 #000000 Negro
 #34B3F1 Celeste
 #EEEEEE Gris
@@ -8,11 +8,10 @@
 #2B88D9 Azul Francia
 #F20F0F Rojo
 #F2F2F2 Blanco Mate
-/**
+
 Mis Fuentes:
 font-family: 'Karma', serif;
-font-family: 'Mulish', sans-serif;
-*/
+font-family: 'Mulish', sans-serif; */
 * {
   margin: 0;
   padding: 0;
@@ -120,7 +119,7 @@ header nav .dropdown-menu {
 }
 
 body {
-  background-color: #3084F2;
+  background: linear-gradient(to top, #F2F2F2, #EEEEEE, #34B3F1, #2B88D9, #3084F2);
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -137,13 +136,16 @@ body {
   align-items: center;
 }
 .articulos section {
-  height: 30%;
-  width: 35%;
-  margin: 10px;
+  justify-content: space-around;
+  width: 45%;
+  margin: 0.625rem;
   margin-top: 3%;
   margin-bottom: 3%;
 }
-
+.articulos .art1, .articulos .art2 {
+  display: flex;
+  flex-wrap: wrap;
+}
 .formularioContacto {
   display: flex;
   flex-wrap: wrap;
@@ -283,7 +285,7 @@ body {
   text-align: center;
   position: relative;
   transition: all 2.25s;
-  background-color: #34B3F1;
+  background: linear-gradient(to top, #F2F2F2, #34B3F1, #2B88D9);
   padding: 5em;
   transform-style: preserve-3d;
 }
@@ -483,7 +485,6 @@ body {
   border: solid;
   border-color: transparent;
   background-color: #008bf8;
-  color: #fff;
   font-size: 0.95rem;
   padding: 0.5rem 1rem;
   position: absolute;
@@ -492,9 +493,14 @@ body {
   opacity: 0;
   transition: 0.3s ease-out;
 }
+.card-button a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .text-body {
   color: rgb(134, 134, 134);
+  text-decoration: none;
 }
 
 /*Text*/
@@ -514,6 +520,390 @@ body {
   opacity: 1;
 }
 
+main {
+  /* Checkbox */
+  /*BOTONES */
+  /* BOTON PAGAR  */
+  /* BOTON AGREGAR COMPROBANTE */
+  /* BOTON ENVIAR */
+}
+main .tituloformulario {
+  color: #000000;
+  font-family: "Mulish", sans-serif;
+  font-size: xx-large;
+  margin-top: 4%;
+  text-align: center;
+}
+main .inscripcion {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+main .inscripcion .datos1, main .inscripcion .datos2, main .inscripcion .datos3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+main .inscripcion .datos1 .inputGroup, main .inscripcion .datos2 .inputGroup, main .inscripcion .datos3 .inputGroup {
+  margin: 1%;
+  width: 150%;
+  font-family: "Mulish", sans-serif;
+  font-style: bold;
+}
+main .inscripcion .datos4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 50%;
+}
+main .inscripcion .datos4 .select-inscripcion {
+  background-color: transparent;
+  border: none;
+  margin: 2%;
+}
+main .inscripcion .datos4 .select-inscripcion .optionInscription {
+  background-color: transparent;
+  border: none;
+  font-style: bold;
+  margin: 2%;
+  justify-self: flex-start;
+}
+main .inscripcion .datos4 .select-nivel {
+  background-color: transparent;
+  font-style: bold;
+  border: none;
+  margin: 2%;
+  justify-self: flex-end;
+}
+main .datos5 {
+  align-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .datos5 .terminosycondiciones {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+main .datos5 .terminosycondiciones h2 {
+  font-size: small;
+  font-family: "Karma", serif;
+  font-style: bold;
+}
+main .datos6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+main .datos6 button {
+  justify-content: space-around;
+}
+main .inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  position: relative;
+  text-align: justify;
+}
+main .inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+main .inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+  background-color: transparent;
+}
+main .inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+main .inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+main .togglerterminos {
+  width: 10%;
+  margin: 0.25rem auto;
+  align-content: center;
+}
+main .togglerterminos input {
+  display: none;
+}
+main .togglerterminos label {
+  display: block;
+  position: relative;
+  width: 3.125rem;
+  height: 1.5625rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 36px;
+  background: #e4e8e8;
+  cursor: pointer;
+}
+main .togglerterminos label::after {
+  display: block;
+  border-radius: 100%;
+  background-color: #d7062a;
+  content: "";
+  animation-name: toggler-size;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+main .togglerterminos label::after, main .togglerterminos label .toggler-on, main .togglerterminos label .toggler-off {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  transform: translateY(-50%) translateX(-50%);
+  transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+main .togglerterminos input:checked + label::after, main .togglerterminos input:checked + label .toggler-on, main .togglerterminos input:checked + label .toggler-off {
+  left: 75%;
+}
+main .togglerterminos input:checked + label::after {
+  background-color: #50ac5d;
+  animation-name: toggler-size2;
+}
+main .togglerterminos .toggler-on, main .togglerterminos .toggler-off {
+  opacity: 1;
+  z-index: 2;
+}
+main .togglerterminos input:checked + label .toggler-off, main .togglerterminos input:not(:checked) + label .toggler-on {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+main .togglerterminos .path {
+  fill: none;
+  stroke: #fefefe;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+@keyframes togglerterminos-size {
+  0%, 100% {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+  50% {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+@keyframes togglerterminos-size2 {
+  0%, 100% {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+  50% {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+main .btmain {
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  border: none;
+  background-color: #26caf8;
+  font-weight: 600;
+  width: 7.225rem;
+  height: 4.125rem;
+}
+main .btnpago {
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  border: none;
+  background-color: #26caf8;
+  font-weight: 600;
+}
+main .btn-1 {
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .btn-1::after {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+main .btn-1:hover {
+  transform: translate(0, -6px);
+  box-shadow: 0.625rem -0.625rem 1.5625rem 0 rgba(143, 64, 248, 0.5), -0.625rem 0.625remx 1.5625rem 0 rgba(39, 200, 255, 0.5);
+}
+main .btn-1:hover::after {
+  transform: rotate(150deg);
+}
+main .icon-btn {
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+main .add-btn:hover {
+  width: 7.5rem;
+}
+main .add-btn::before,
+main .add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: seagreen;
+}
+main .add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+main .add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+main .icon-btn:focus {
+  outline: none;
+}
+main .btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+main .add-btn:hover::before,
+main .add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+main .add-btn:hover .btn-txt {
+  opacity: 1;
+}
+main .add-icon::after,
+main .add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: seagreen;
+  overflow: hidden;
+}
+main .add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+main .add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+main .add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+main .add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+main .btnEnviar {
+  color: white;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 7.225rem;
+  height: 4.125rem;
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+  font-weight: 600;
+}
+main .btnEnviar span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  color: black;
+}
+main .btnEnviar svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+main .btnEnviar:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+main .btnEnviar:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+main .btnEnviar:hover span {
+  transform: translateX(5em);
+}
+main .btnEnviar:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
 footer {
   display: grid;
   grid-template-columns: 30% 30%;
@@ -522,7 +912,7 @@ footer {
   list-style: none;
   text-decoration: none;
   color: #000000;
-  background-color: #D91122;
+  background: linear-gradient(to bottom, #D91122, #F20F0F, #F15412);
   font-family: "Mulish", sans-serif;
   margin-top: 10%;
   margin-bottom: 0px;
@@ -606,12 +996,12 @@ footer .redesbt .buttonredes a {
 }
 
 .cardfooter {
-  padding: 3%;
+  padding: 2%;
   margin-top: 1.5%;
   margin-bottom: 0.5%;
   margin-left: 5%;
   margin-right: 0%;
-  width: 35%;
+  width: 20%;
   text-align: center;
   background: #2B88D9;
   border-radius: 10%;
@@ -645,21 +1035,21 @@ footer .redesbt .buttonredes a {
   background: none;
   border: none;
   outline: none;
-  width: 100%;
+  width: 90%;
   color: #d3d3d3;
 }
 
 /*Text*/
 .title {
   margin-bottom: 1rem;
-  font-size: 150%;
+  font-size: 120%;
   font-style: bold;
   color: #f5f5f5;
 }
 
 /*Buttons*/
 .btn {
-  margin: 1rem;
+  margin: 0.5rem;
   border: none;
   border-radius: 4px;
   font-weight: bold;

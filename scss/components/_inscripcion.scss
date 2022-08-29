@@ -1,0 +1,473 @@
+main{
+  .tituloformulario{
+    color:$color-letras ;
+    font-family: $fuente-otros;
+    font-size:xx-large;
+    margin-top: 4%;
+    text-align: center;
+    
+  }
+  .inscripcion{
+    display: flex;                            
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+
+    .datos1, .datos2, .datos3{
+      display: flex;
+      flex-wrap: wrap;  
+      justify-content: space-between;
+      align-items: center;
+      width: 25%;
+      
+    
+      .inputGroup{
+        margin: 1%;
+        width: 150%;
+        font-family: $fuente-otros;
+        font-style: bold;
+           
+      }
+     }
+    
+     .datos4{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 10%;
+      margin-left: 10%;
+      width: 50%;
+      .select-inscripcion{
+        background-color: transparent;
+        border: none;
+        margin: 2%;
+        .optionInscription{
+          background-color: transparent;
+          border: none;
+          font-style: bold;
+          margin: 2%;
+          justify-self: flex-start;
+          
+        }
+      }
+      .select-nivel{
+        background-color: transparent;
+        font-style: bold;
+        border: none;
+        margin: 2%;
+        justify-self: flex-end;
+      }
+      
+     }
+
+     
+
+
+     }
+     .datos5{
+      align-content: center;
+      width: 100%;  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      .terminosycondiciones{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;   
+          
+       
+        
+        h2{
+          font-size: small;
+          font-family: $fuente-gral;
+          font-style: bold;
+          
+        }
+      }
+      
+      }
+
+  
+  .datos6{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    button{
+      justify-content: space-around;  
+       
+     
+    }
+  }
+
+
+
+
+
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    position: relative;
+    text-align: justify;
+    
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+   
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+    background-color: transparent;
+   
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+    
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+
+ 
+
+  /* Checkbox */
+.togglerterminos {
+  width: 10%;
+  margin:0.25rem  auto;
+  align-content: center;
+
+
+}
+
+.togglerterminos input {
+  display: none;
+}
+
+.togglerterminos label {
+  display: block;
+  position: relative;
+  width: 3.125rem;
+  height: 1.5625rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 36px;
+  background: #e4e8e8;
+  cursor: pointer;
+}
+
+.togglerterminos label::after {
+  display: block;
+  border-radius: 100%;
+  background-color: #d7062a;
+  content: '';
+  animation-name: toggler-size;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.togglerterminos label::after, .togglerterminos label .toggler-on, .togglerterminos label .toggler-off {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 1.5625rem;
+  height:1.5625rem;
+  transform: translateY(-50%) translateX(-50%);
+  transition: left 0.15s ease-in-out, background-color 0.2s ease-out, width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.togglerterminos input:checked + label::after, .togglerterminos input:checked + label .toggler-on, .togglerterminos input:checked + label .toggler-off {
+  left: 75%;
+}
+
+.togglerterminos input:checked + label::after {
+  background-color: #50ac5d;
+  animation-name: toggler-size2;
+}
+
+.togglerterminos .toggler-on, .togglerterminos .toggler-off {
+  opacity: 1;
+  z-index: 2;
+}
+
+.togglerterminos input:checked + label .toggler-off, .togglerterminos input:not(:checked) + label .toggler-on {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.togglerterminos .path {
+  fill: none;
+  stroke: #fefefe;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+@keyframes togglerterminos-size {
+  0%, 100% {
+    width:1.625rem;
+    height: 1.625rem;
+  }
+
+  50% {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+@keyframes togglerterminos-size2 {
+  0%, 100% {
+    width: 1.625rem;
+    height: 1.625rem;
+  }
+
+  50% {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+/*BOTONES */
+
+.btmain{
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;  
+  border: none;
+  background-color: #26caf8;
+  font-weight: 600;
+  width: 7.225rem;
+  height: 4.125rem;
+
+}
+
+/* BOTON PAGAR  */
+.btnpago {
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;  
+  border: none;
+  background-color: #26caf8;
+  font-weight: 600;
+}
+
+.btn-1 {
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-1::after {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+.btn-1:hover {
+  transform: translate(0, -6px);
+  box-shadow: 0.625rem -0.625rem 1.5625rem 0 rgba(143, 64, 248, 0.5),  -0.625rem 0.625remx 1.5625rem 0 rgba(39, 200, 255, 0.5);
+}
+
+.btn-1:hover::after {
+  transform: rotate(150deg);
+}
+
+ /* BOTON AGREGAR COMPROBANTE */
+.icon-btn {
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.add-btn:hover {
+  width: 7.5rem;
+}
+
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: seagreen;
+}
+
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+  outline: none;
+}
+
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+  opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: seagreen;
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+/* BOTON ENVIAR */
+.btnEnviar {
+   color: white;
+  padding: 0.7em 1em;
+  display: flex;
+ align-items: center;
+ border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 7.225rem;
+  height: 4.125rem;
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;  
+  font-weight: 600;
+
+  
+  span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+    color: black;
+   }
+
+   svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+
+ }
+ 
+ 
+ .btnEnviar:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+ }
+ 
+ .btnEnviar:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+ }
+ 
+ .btnEnviar:hover span {
+  transform: translateX(5em);
+ }
+ 
+ .btnEnviar:active {
+  transform: scale(0.95);
+ }
+ 
+ @keyframes fly-1 {
+  from {
+   transform: translateY(0.1em);
+  }
+ 
+  to {
+   transform: translateY(-0.1em);
+  }
+ }
+ 
+ 
+}

@@ -102,6 +102,7 @@ main{
     align-items: center;
     button{
       justify-content: space-around;  
+      
        
      
     }
@@ -123,7 +124,7 @@ main{
     font-size: 100%;
     padding: 0.8em;
     outline: none;
-    border: 2px solid rgb(200, 200, 200);
+    border: 0.125rem solid rgb(200, 200, 200);
     background-color: transparent;
     border-radius: 20px;
     width: 100%;
@@ -177,7 +178,7 @@ main{
   position: relative;
   width: 3.125rem;
   height: 1.5625rem;
-  border: 1px solid #d6d6d6;
+  border: 0.0625rem solid #d6d6d6;
   border-radius: 36px;
   background: #e4e8e8;
   cursor: pointer;
@@ -316,7 +317,7 @@ main{
 .icon-btn {
   width: 3.125rem;
   height: 3.125rem;
-  border: 1px solid #cdcdcd;
+  border: 0.0625rem solid #cdcdcd;
   background: white;
   border-radius: 25px;
   overflow: hidden;
@@ -335,23 +336,23 @@ main{
   transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
   content: "";
   position: absolute;
-  height: 4px;
-  width: 10px;
-  top: calc(50% - 2px);
+  height: 0.25rem;
+  width: 0.625rem;
+  top: calc(50% - 0.125rem);
   background: seagreen;
 }
 
 .add-btn::after {
-  right: 14px;
+  right: 0.875rem ;
   overflow: hidden;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
 }
 
 .add-btn::before {
-  left: 14px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  left: 0.875rem;
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius:0.125rem;
 }
 
 .icon-btn:focus {
@@ -365,8 +366,8 @@ main{
 
 .add-btn:hover::before,
 .add-btn:hover::after {
-  width: 4px;
-  border-radius: 2px;
+  width: 0.25rem;
+  border-radius: 0.125rem;
 }
 
 .add-btn:hover .btn-txt {
@@ -378,35 +379,35 @@ main{
   transition: all 0.2s ease-in-out;
   content: "";
   position: absolute;
-  height: 20px;
-  width: 2px;
+  height: 1.25rem;
+  width: 0.125rem;
   top: calc(50% - 10px);
   background: seagreen;
   overflow: hidden;
 }
 
 .add-icon::before {
-  left: 22px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  left: 1.375rem;
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius:0.125rem;
 }
 
 .add-icon::after {
-  right: 22px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  right: 1.375rem;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
 }
 
 .add-btn:hover .add-icon::before {
-  left: 15px;
-  height: 4px;
-  top: calc(50% - 2px);
+  left: 0.9375rem;
+  height: 0.25rem;
+  top: calc(50% - 0.125rem);
 }
 
 .add-btn:hover .add-icon::after {
-  right: 15px;
-  height: 4px;
-  top: calc(50% - 2px);
+  right: 0.9375rem;
+  height: 0.25rem;
+  top: calc(50% - 0.125rem);
 }
 
 /* BOTON ENVIAR */
